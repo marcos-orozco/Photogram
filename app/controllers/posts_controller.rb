@@ -13,6 +13,9 @@ def create
   redirect_to posts_path
 end
 
+def show
+  @post = Post.find(params[:id])
+
 private
 
 def post_params
